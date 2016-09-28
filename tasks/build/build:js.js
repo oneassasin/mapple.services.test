@@ -1,7 +1,8 @@
 module.exports = function (gulp, config, plugins) {
     gulp.task('build:js', function () {
         var files = [
-            config.src + '/**/*.js'
+            config.src + '/app/**/*.module.js',
+            config.src + '/app/**/*.js'
         ];
         return gulp
             .src(files)
