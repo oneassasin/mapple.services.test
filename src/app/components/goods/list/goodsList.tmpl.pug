@@ -1,0 +1,16 @@
+.panel.panel-default
+    .panel-heading
+        p Goods
+    .panel-body
+        table.table
+            thead
+                tr
+                    th Name
+                    th Price
+                    th Details
+            tbody
+                tr(ng-repeat='good in vm._goods')
+                    th {{::good.name}}
+                    th {{::good.price}}
+                    th
+                        button(ng-click='vm.showDetails(good)') Details
