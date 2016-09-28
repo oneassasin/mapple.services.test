@@ -1,11 +1,9 @@
 module.exports = function (gulp, config, plugins) {
     gulp.task('copy:vendorJS', function () {
         var files = [
-            'bower_components/firebase/*.js',
             'bower_components/api-check/dist/*.js',
             'bower_components/angular/*.js',
-            'bower_components/**/*.js',
-            config.src + '/js/*.js'
+            'bower_components/**/*.js'
         ];
         return gulp
             .src(files)

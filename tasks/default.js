@@ -1,6 +1,6 @@
 var runSequence = require('run-sequence');
 
-module.exports = function (gulp, config, plugins) {
+module.exports = function (gulp) {
     gulp.task('default', function (done) {
         runSequence(
             'clean:all',

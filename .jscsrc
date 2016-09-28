@@ -1,68 +1,99 @@
 {
-    "disallowEmptyBlocks": true,
-    "disallowKeywords": [
-        "with"
+    "excludeFiles": [
+        "node_modules/**",
+        "bower_components/**"
     ],
-    "disallowMixedSpacesAndTabs": true,
-    "disallowMultipleLineStrings": true,
-    "disallowMultipleVarDecl": true,
-    "disallowSpaceAfterPrefixUnaryOperators": [
-        "!",
-        "+",
-        "++",
-        "-",
-        "--",
-        "~"
-    ],
-    "disallowSpaceBeforeBinaryOperators": [
-        ","
-    ],
-    "disallowSpaceBeforePostfixUnaryOperators": true,
-    "disallowSpacesInNamedFunctionExpression": {
-        "beforeOpeningRoundBrace": true
-    },
-    "disallowSpacesInsideArrayBrackets": true,
-    "disallowSpacesInsideParentheses": true,
-    "disallowTrailingComma": true,
-    "disallowTrailingWhitespace": true,
-    "requireCamelCaseOrUpperCaseIdentifiers": true,
-    "requireCapitalizedConstructors": true,
-    "requireCommaBeforeLineBreak": true,
-    "requireCurlyBraces": true,
-    "requireDotNotation": true,
-    "requireLineFeedAtFileEnd": true,
-    "requireParenthesesAroundIIFE": true,
-    "requireSpaceAfterBinaryOperators": true,
-    "requireSpaceAfterKeywords": [
-        "catch",
-        "do",
+    "requireCurlyBraces": [
+        "if",
         "else",
         "for",
-        "if",
-        "return",
-        "switch",
+        "while",
+        "do",
         "try",
-        "while"
+        "catch"
     ],
-    "requireSpaceAfterLineComment": true,
-    "requireSpaceBeforeBinaryOperators": true,
-    "requireSpaceBeforeBlockStatements": true,
-    "requireSpacesInAnonymousFunctionExpression": {
-        "beforeOpeningCurlyBrace": true
+    "requireOperatorBeforeLineBreak": true,
+    "requireCamelCaseOrUpperCaseIdentifiers": true,
+    "maximumLineLength": {
+        "value": 120,
+        "allowComments": true,
+        "allowRegex": true
     },
-    "requireSpacesInConditionalExpression": true,
-    "requireSpacesInFunctionDeclaration": {
-        "beforeOpeningCurlyBrace": true
-    },
-    "requireSpacesInFunctionExpression": {
-        "beforeOpeningCurlyBrace": true
-    },
-    "requireSpacesInNamedFunctionExpression": {
-        "beforeOpeningCurlyBrace": true
-    },
-    "requireSpacesInsideObjectBrackets": "allButNested",
     "validateIndentation": 4,
-    "validateLineBreaks": "LF",
-    "validateParameterSeparator": ", ",
-    "validateQuoteMarks": "'"
+    "validateQuoteMarks": "'",
+    "disallowMultipleLineStrings": true,
+    "disallowMixedSpacesAndTabs": true,
+    "disallowTrailingWhitespace": true,
+    "disallowSpaceAfterPrefixUnaryOperators": true,
+    "disallowMultipleVarDecl": null,
+    "requireSpaceAfterKeywords": [
+        "if",
+        "else",
+        "for",
+        "while",
+        "do",
+        "switch",
+        "return",
+        "try",
+        "catch"
+    ],
+    "requireSpaceBeforeBinaryOperators": [
+        "=",
+        "+=",
+        "-=",
+        "*=",
+        "/=",
+        "%=",
+        "<<=",
+        ">>=",
+        ">>>=",
+        "&=",
+        "|=",
+        "^=",
+        "+=",
+        "+",
+        "-",
+        "*",
+        "/",
+        "%",
+        "<<",
+        ">>",
+        ">>>",
+        "&",
+        "|",
+        "^",
+        "&&",
+        "||",
+        "===",
+        "==",
+        ">=",
+        "<=",
+        "<",
+        ">",
+        "!=",
+        "!=="
+    ],
+    "requireSpaceAfterBinaryOperators": true,
+    "requireSpacesInConditionalExpression": true,
+    "requireSpaceBeforeBlockStatements": true,
+    "requireLineFeedAtFileEnd": true,
+    "disallowSpacesInsideObjectBrackets": "all",
+    "disallowSpacesInsideArrayBrackets": "all",
+    "disallowSpacesInsideParentheses": true,
+    "jsDoc": {
+        "checkAnnotations": true,
+        "checkParamNames": true,
+        "requireParamTypes": true,
+        "checkReturnTypes": true,
+        "checkTypes": true
+    },
+    "disallowMultipleLineBreaks": true,
+    "disallowCommaBeforeLineBreak": null,
+    "disallowDanglingUnderscores": null,
+    "disallowEmptyBlocks": null,
+    "disallowTrailingComma": null,
+    "requireCommaBeforeLineBreak": null,
+    "requireDotNotation": null,
+    "requireMultipleVarDecl": null,
+    "requireParenthesesAroundIIFE": true
 }
