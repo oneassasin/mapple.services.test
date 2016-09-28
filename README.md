@@ -4,7 +4,7 @@ Application for test task from Maple Service inc.
 ## Start application
 Write to console in folder with application
 ```bash
-npm install && bower install && gulp watch
+npm install && bower install && gulp
 ```
 
 ## Code Styleguide
