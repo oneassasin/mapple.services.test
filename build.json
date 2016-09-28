@@ -1,0 +1,9 @@
+{
+  "dist": {
+    "folderName": "tmp",
+    "tmpls": "tmpls",
+    "js": "js",
+    "css": "css"
+  },
+  "src": "src"
+}
