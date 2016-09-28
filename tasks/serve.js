@@ -15,7 +15,7 @@ module.exports = function (gulp, config, plugins) {
             );
         });
         plugins.watch(config.src + '/**/*.css', function () {
-            gulp.start('build:stylus');
+            gulp.start('build:css');
         });
         plugins.watch(config.src + '/**/*.js', function () {
             gulp.start('build:js');

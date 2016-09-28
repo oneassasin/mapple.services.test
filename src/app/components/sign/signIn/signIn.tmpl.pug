@@ -1,0 +1,4 @@
+.form-signin
+    form(novalidate)
+        formly-form(model='vm.signInModel' fields='vm.newSignInFields' form='vm.signInForm')
+            button(ng-click='vm.signIn()' ng-disabled='vm.signInForm.$invalid').btn.btn-warning SIGN IN

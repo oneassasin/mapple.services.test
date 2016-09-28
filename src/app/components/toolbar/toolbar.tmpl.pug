@@ -1,0 +1,17 @@
+nav.navbar.navbar-default
+    .container-fruid
+        .navbar-header
+            a.navbar-brand Toolbar
+        .navbar-collapse.collape
+            ul.nav.navbar-nav.navbar-left(ng-show='vm.currentUser !== null')
+                li(ng-repeat='tab in vm._tabs' ui-sref-active='active')
+                    a(ui-sref='{{::tab.state}}' href='') {{::tab.name}}
+            ul.nav.navbar-nav.navbar-right
+                li.dropdown(uib-dropdown='' ng-show='vm.currentUser !== null')
+                        a.dropdown-toggle(href='' uib-dropdown-toggle='')
+                            span {{vm.currentUser.login}}
+                            span.caret
+                        ul.dropdown-menu
+                            li
+                                a(href='' ng-click='vm.signOut()')
+                                    span Sign out

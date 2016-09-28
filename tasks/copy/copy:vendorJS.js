@@ -18,6 +18,7 @@ module.exports = function (gulp, config, plugins) {
             .pipe(plugins.ignore.exclude('**/scripts/**/*.js'))
             .pipe(plugins.ignore.exclude('bootstrap/**/*.js'))
             .pipe(plugins.ignore.exclude('jquery/**/*.js'))
+            .pipe(plugins.ignore.exclude('**/ui-bootstrap.js'))
             .pipe(plugins.wrap('//<%= file.path %>\n<%= contents %>'))
             .pipe(plugins.concat('vendor.js'))
             .pipe(gulp.dest(config.dist.folderName + '/' + config.dist.js))
